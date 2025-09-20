@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  --bg: #05070d;
+  --bg-alt: #0b0f1c;
+  --layer: rgba(10, 14, 25, 0.72);
+  --glass: rgba(18, 22, 36, 0.78);
+  --glass-strong: rgba(32, 38, 58, 0.9);
+  --glass-border: rgba(255, 255, 255, 0.07);
+  --text: #f5f7ff;
+  --muted: #98a3c7;
+  --outline: rgba(140, 160, 220, 0.25);
+  --accent-primary: #7c5cff;
+  --accent-secondary: #19d3da;
+  --accent-amber: #ffb86c;
+  --accent-red: #ff6b6b;
+  --accent-green: #5ef38c;
+  --radius-xl: 26px;
+  --radius-lg: 20px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --shadow-soft: 0 20px 60px rgba(4, 9, 30, 0.35);
+  --shadow-inner: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --transition-snappy: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at 0% -10%, rgba(124, 92, 255, 0.4), transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(25, 211, 218, 0.35), transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(255, 184, 108, 0.25), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 92, 255, 0.4);
+  border-radius: 999px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+section {
+  position: relative;
+}
+
+@media (max-width: 880px) {
+  body {
+    background: radial-gradient(circle at 25% -10%, rgba(124, 92, 255, 0.45), transparent 55%),
+      radial-gradient(circle at 100% 0%, rgba(25, 211, 218, 0.35), transparent 45%),
+      var(--bg);
+  }
+}
